@@ -34,7 +34,7 @@ Additionally the following PINs provide additional debug information:
 
 ArduLogic can use any pin as trigger pin (clock signals, etc), but IRQs are
 only used when all triggers are on the pins D2 and/or D3. So it is highly
-recommended to connect clock lines or other trigger lines to eighter pin
+recommended to connect clock lines or other trigger lines to either pin
 D2 or pin D3.
 
 The data is transfered from the Arduino to the PC using a 2 megabaud serial
@@ -75,7 +75,7 @@ trigger <EDGE> <PIN>
 --------------------
 
 Acquire data whenever the specified edge occurs on the specified pin.
-Not that `trigger' statements can't be used together with `decode'
+Note that `trigger' statements can't be used together with `decode'
 statements in the same configuration file. But it is perfectly fine
 to use as many `trigger' statements in a configuration file as you want.
 
